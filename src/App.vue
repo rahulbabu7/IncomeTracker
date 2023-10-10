@@ -1,6 +1,7 @@
 <script setup>
 import { reactive,computed } from 'vue';
 import Header from './components/Header.vue';
+import Form from './components/Form.vue';
 const state = reactive({
   income:[2000,3000,3203],
   totalIncome :computed(()=>{
@@ -24,6 +25,7 @@ const state = reactive({
 <template>
 <Header :totalIncome ="state.totalIncome" />  
 <!-- passing the total income to the header component -->
+<Form  :Income="state.income"/>
 </template>
 
 <style scoped>
