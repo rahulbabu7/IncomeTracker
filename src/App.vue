@@ -2,7 +2,7 @@
 import { reactive,computed } from 'vue';
 import Header from './components/Header.vue';
 const state = reactive({
-  income:[2000,1000,2000],
+  income:[2000,3000,3203],
   totalIncome :computed(()=>{
     let sum = 0;
     if(state.income.length >0){
@@ -24,7 +24,6 @@ const state = reactive({
 <template>
 <Header :totalIncome ="state.totalIncome" />  
 <!-- passing the total income to the header component -->
-<h1>{{ state.totalIncome }}</h1>
 </template>
 
 <style scoped>
