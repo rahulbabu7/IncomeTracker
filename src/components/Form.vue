@@ -6,6 +6,7 @@ const formData = reactive({
     value:null,
     date:null
 })
+//handles form submit
 
 const formhandler  = ()=>{
 Income.push({
