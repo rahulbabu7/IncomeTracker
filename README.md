@@ -1,1 +1,1 @@
-Income Tracker
+Income
